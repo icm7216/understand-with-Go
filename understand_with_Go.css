@@ -1,0 +1,148 @@
+/*
+
+  understand_with_Go.css
+
+*/
+
+body {
+  background-color: white;
+  color: black;
+  text-align: left;
+  line-height: 140%;
+  margin-top:  5%;
+  margin-left: 2em;
+  width: auto;
+}
+
+h1 {
+  text-align:    left;
+  font-size:     150%;
+  margin-top:    2em;
+  margin-bottom: 1em;
+  padding-left: 10px;
+  border-left: 40px solid #33a;
+  line-height: 40px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 150%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #33a;
+}
+
+h3 {
+  text-align: left;
+  font-size:  150%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-left: 8px;
+  border-left: 24px solid #33a;
+}
+
+h4 {
+  text-align: left;
+  font-size:  150%;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+li {
+  padding-left: 0em;
+}
+
+dl {
+  margin-top:    0em;
+  margin-bottom: 0em;
+  margin-left:   0em;
+  margin-right:  0em;
+}
+
+dt {
+  margin-top:    0.5em;
+  margin-bottom: 0.2em;
+  margin-left:   0em;
+  margin-right:  0em;
+}
+
+dd {
+  margin-top:    0em;
+  margin-bottom: 0em;
+  margin-left:   4em;
+  margin-right:  0em;
+}
+
+p.caption {
+  margin-botton: 0px;
+}
+
+code {
+  border-radius: 3px;
+  border: 1px solid rgb(216, 216, 216);
+  background-color: rgb(249, 249, 249);
+  margin: 0px 3px;
+  padding: 0px 3px;
+  color: rgb(10, 10, 10);
+  font-size: 0.8em;
+  line-height: 1.2em;
+  display: inline-block;
+}
+
+pre.src code, pre.example code, pre.src-ruby code {
+  line-height: 1.4em;
+  background: #eee;
+  overflow: auto;
+  font-size: small;
+  display: block;
+  margin: 0px;
+}
+
+pre.emlist {
+  line-height: 1.4em;
+  padding-left: 2em;
+  overflow: auto;
+  font-size: small;
+}
+
+span.ami {
+  color: black;
+  background-color: #ccc;
+}
+
+p.image {
+  align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+address {
+  font-style: normal;
+  line-height: 110%;
+  text-align: right;
+}
+
+a:link, a:visited {
+  color: #33a;
+  text-decoration: none;
+}
+
+a:active, a:visited {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+div.column {
+  background-color: rgb(231, 246, 246)!important;
+  padding: 10px;
+  width: auto;
+}
+
