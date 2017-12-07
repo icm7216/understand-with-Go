@@ -146,3 +146,33 @@ div.column {
   width: auto;
 }
 
+table {
+  border: 1px solid rgb(220, 220, 220);
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+table th {
+  border: 1px solid rgb(220, 220, 220);
+  padding: 0.1em 0.5em;
+  font-weight: bold;
+}
+
+table td {
+  border: 1px solid rgb(220, 220, 220);
+  padding: 0.1em 0.5em;
+  background-color: rgb(255, 255, 255);
+}
+
+td code, th code {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+table.imgphoto  th, table.imgphoto  tr, table.imgphoto  td {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+
+
