@@ -125,7 +125,8 @@ target_path.each do |toc_id, path|
   page.css('p.twitBtn').remove
   page.css('div.pages').remove
   page.css('p.returnCat').remove
-
+  page.css('colgroup').remove
+  
   # fix attribute
   h1_id = page.at('div#articleHead h1')
   h1_id["id"] = "#{toc_id}"
