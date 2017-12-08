@@ -133,6 +133,10 @@ target_path.each do |toc_id, path|
   p_href = page.at('div#articleHead p.sertitle a')
   p_href["href"] = "#toc"
 
+  # Avoid the influence of "column" of Pandoc
+  div_col = page.css('div.column')
+  div_col.each {|x| x['class'] = x['class'].sub(/column/, 'col')}
+
   # remove ID duplication
   page.css('h2#クイズ').remove_attr('id')
   page.css('h2#今回のまとめと次回予告').remove_attr('id')

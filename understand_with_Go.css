@@ -140,10 +140,23 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-div.column {
-  background-color: rgb(231, 246, 246)!important;
-  padding: 10px;
-  width: auto;
+div.col {
+  padding: 20px;
+  margin: 10px;
+}
+
+div.red {
+  background-color: rgb(255, 234, 234)!important;
+  border: 1px solid rgb(255, 234, 234)!important;
+}
+
+div.blue {
+  background-color: rgb(235, 241, 249)!important;
+  border: 1px solid rgb(235, 241, 249)!important;
+}
+
+div.dot {
+  border-style: dotted;
 }
 
 table {
