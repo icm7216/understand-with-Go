@@ -125,7 +125,13 @@ target_path.each do |toc_id, path|
   page.css('p.twitBtn').remove
   page.css('div.pages').remove
   page.css('p.returnCat').remove
-  page.css('colgroup').remove
+  
+  # remove comment in a colgroup
+  colgroup = page.css('colgroup')
+  colgroup.each do |x| 
+    col_str = x.to_html.gsub(/<!-- No CDATA -->/, '')
+    x.swap(col_str)
+  end
   
   # fix attribute
   h1_id = page.at('div#articleHead h1')
