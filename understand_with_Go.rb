@@ -5,7 +5,7 @@
 #
 # このスクリプトは、渋川よしき さんによるアスキーjpの「プログラミング＋」
 # コーナーの連載「Goならわかるシステムプログラミング」からEPUBを作成します。
-# 連載url => http://ascii.jp/elem/000/001/235/1235262/
+# 連載url => https://ascii.jp/elem/000/001/235/1235262/
 #
 # -------------------------------------------------------------------
 # My environment:
@@ -23,8 +23,8 @@ HTML_OUT = 'understand_with_Go.html'
 EPUB_OUT = 'understand_with_Go.epub'
 
 # target url
-target_host = 'http://ascii.jp/elem/000/'
-target_domain = 'http://ascii.jp'
+target_host = 'https://ascii.jp/elem/000/'
+target_domain = 'https://ascii.jp'
 
 target_path = {
   part01: '001/234/1234843/',
@@ -65,7 +65,7 @@ all_html = <<HTML
 </head>
 <body>
 <h1>Goならわかるシステムプログラミング</h1>
-<p>この書籍は 渋川よしき さんによる、<a href="http://ascii.jp/">ASCII.jp</a> の「プログラミング＋」コーナーの連載「<a href="http://ascii.jp/elem/000/001/235/1235262/">Goならわかるシステムプログラミング</a>」から作成しています。</p>
+<p>この書籍は 渋川よしき さんによる、<a href="https://ascii.jp/">ASCII.jp</a> の「プログラミング＋」コーナーの連載「<a href="https://ascii.jp/elem/000/001/235/1235262/">Goならわかるシステムプログラミング</a>」から作成しています。</p>
 <h2 id="toc">目次</h2>
 <ul>
   <li><a href="#part01">第1回 Goで覗くシステムプログラミングの世界</a></li>
@@ -125,6 +125,7 @@ target_path.each do |toc_id, path|
   page.css('p.twitBtn').remove
   page.css('div.pages').remove
   page.css('p.returnCat').remove
+  page.css('img#EndOfTxt2').remove
   
   # remove comment in a colgroup
   colgroup = page.css('colgroup')
